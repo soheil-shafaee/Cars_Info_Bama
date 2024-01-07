@@ -17,8 +17,8 @@ The project is organized into three main files:
 1. Clone the repository:
 
     ```bash
-    git clone [https://github.com/your-username/audi-car-price-prediction.git](https://github.com/soheil-shafaee/Cars_Info_Truecar.git)
-    cd audi-car-price-prediction
+    git clone (https://github.com/soheil-shafaee/Cars_Info_Truecar.git)
+    cd Cars_Info_Truecar
     ```
 
 2. Install required libraries:
@@ -37,14 +37,14 @@ Execute the following command to create the required MySQL database table:
 Run the web scraping script to collect Audi car data and insert it into the MySQL database:
 
 ```bash
-python web_scraping.py
+python Web_Scraping.py
 ```
 This script utilizes BeautifulSoup and requests to scrape data from TrueCar.com and inserts it into the MySQL database.
 
 ## Price Prediction
 Utilize the prediction script to predict car prices based on car name, model, city, and operation:
 ```bash
-python predict_price.py
+python ML-to-Forecast.py
 ```
 The script uses a decision tree classifier from scikit-learn to make predictions based on the collected data.
 
