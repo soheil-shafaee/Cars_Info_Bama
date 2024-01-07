@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project aims to predict the prices of Audi cars by utilizing web scraping techniques to gather data from TrueCar.com and implementing a machine learning model using scikit-learn. The dataset includes information such as car name, model, city, and operation.
+This project aims to predict the prices of Audi cars by utilizing web scraping techniques to gather data from <a href="https://www.truecar.com/used-cars-for-sale/listings/audi/?page=1">Truecar.com</a> and implementing a machine learning model using scikit-learn. The dataset includes information such as car name, model, city, and operation.
 
 ## Project Structure
 
