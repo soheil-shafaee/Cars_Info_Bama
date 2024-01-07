@@ -25,19 +25,20 @@ for n in range(1, 5):
         city = car.find("div", {"class": "vehicle-card-location mt-1 text-xs"}).text
         price = car.find("span", {"data-test": "vehicleListingPriceAmount"}).text.split("$")[1].split(",")
         int_price = int("".join(price))
+
         sql = (name, year, int_operation, city, int_price)
         com = """
-        INSERT INTO cars_info
-        VALUES(%s, %i, %i, %s, %i)
-        """ % sql
+        INSERT INTO cars_info(Car_Name, Model, Operation, City, Price)
+        VALUES(%s, %s, %s, %s, %s)
+        """
 
         try:
-            cur.execute(com)
+            cur.execute(com, sql)
             conx.commit()
 
         except Exception as e:
             print(e)
             conx.rollback()
 
-        conx.close()
+conx.close()
 
