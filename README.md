@@ -33,11 +33,10 @@ The project is organized into three main files:
 
 Execute the following command to create the required MySQL database table:
 
-
-##Web Scraping and Data Insertion
+## Web Scraping and Data Insertion
 Run the web scraping script to collect Audi car data and insert it into the MySQL database:
 
-bash
-Copy code
+```bash
 python web_scraping.py
+```
 This script utilizes BeautifulSoup and requests to scrape data from TrueCar.com and inserts it into the MySQL database.
