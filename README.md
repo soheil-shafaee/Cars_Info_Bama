@@ -17,7 +17,7 @@ The project is organized into three main files:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/audi-car-price-prediction.git
+    git clone [https://github.com/your-username/audi-car-price-prediction.git](https://github.com/soheil-shafaee/Cars_Info_Truecar.git)
     cd audi-car-price-prediction
     ```
 
