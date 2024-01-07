@@ -8,9 +8,9 @@ This project aims to predict the prices of Audi cars by utilizing web scraping t
 
 The project is organized into three main files:
 
-1. **`create_table.sql`**: SQL script to create the MySQL database table for storing Audi car data.
-2. **`web_scraping.py`**: Python script for web scraping Audi car data from TrueCar.com and inserting it into the MySQL database.
-3. **`predict_price.py`**: Python script that uses the collected data to predict car prices based on car name, model, city, and operation.
+1. **`Create_Table_for_info.py`**: SQL script to create the MySQL database table for storing Audi car data.
+2. **`Web_Scraping.py`**: Python script for web scraping Audi car data from TrueCar.com and inserting it into the MySQL database.
+3. **`ML-to-Forecast.py`**: Python script that uses the collected data to predict car prices based on car name, model, city, and operation.
 
 ## Setup
 
@@ -40,3 +40,11 @@ Run the web scraping script to collect Audi car data and insert it into the MySQ
 python web_scraping.py
 ```
 This script utilizes BeautifulSoup and requests to scrape data from TrueCar.com and inserts it into the MySQL database.
+
+## Price Prediction
+Utilize the prediction script to predict car prices based on car name, model, city, and operation:
+```bash
+python predict_price.py
+```
+The script uses a decision tree classifier from scikit-learn to make predictions based on the collected data.
+
